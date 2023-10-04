@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'League Spartan', sans-serif;
+}
+
+:root {
+    --background-color: linear-gradient(90deg, rgba(0,11,24,1) 0%, rgba(0,23,45,1) 58%, rgba(0,38,77,1) 100%);
+    --second--background-color: linear-gradient(90deg, rgba(0,23,45,1) 0%, rgba(0,38,77,1) 58%, rgba(2,56,110,1) 100%);
+    --text-color: #fff;
+    --main-color: #C3e3eb;
+}
+
+body {
+    width: 100%;
+}
+
+/* Navbar */
+
+.logo {
+    width: 12%;
+    height: 12%;
+    color: white;
+}
+
+.navbar {
+    /* background-color: var(--main-color); */
+    /* color: #fff; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 2rem 2rem;
+    padding: 1.2rem 1.2rem;
+    border: 2px solid black;
+    border-radius: 16px;
+}
+
+.cart {
+    position: relative;
+    font-size: 40px;
+}
+
+.cart-items {
+    position: absolute;
+    right: -8px;
+    top: -4px;
+    padding-top: 3px;
+    padding-left: 3px;
+    padding-right: 3px;
+    font-size: 20px;
+    background-color: red;
+    border: 1px solid white;
+    border-radius: 50%;
+    color: white;
+}
+
+/* Shop items */
+
+.item img{
+    width: 100%;
+    border-radius: 12px;
+}
+
+.shop {
+    display: grid;
+    grid-template-columns: repeat(4, 220px);
+    gap: 28px;
+    justify-content: center;
+}
+
+.item {
+    border: 3px solid black;
+    border-radius: 12px;
+}
+
+.details {
+    display: flex;
+    flex-direction: column;
+    padding: 12px;
+    gap: 12px;
+}
+
+.price-quantity {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    font-size: 20px;
+}
+
+.bi-dash-lg,
+.bi-plus-lg {
+    border: 1px solid black;
+    border-radius: 50%;
+    background-color: black;
+    color: white;
+}
+
+/* RWD */
+@media (max-width:800px) {
+    .shop {
+        grid-template-columns: repeat(2, 220px);
+    }
+}
+
+@media (max-width:480px) {
+    .shop {
+        grid-template-columns: repeat(1, 220px);
+    }
+
+    .navbar {
+        /* background-color: var(--main-color); */
+        /* color: #fff; */
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0.4rem 0.4rem;
+        padding: 0.4rem 0.4rem;
+        border: 2px solid black;
+        border-radius: 12px;
+    }
+
+    .navbar h1{
+        font-size: 24px;
+    }
+
+    .logo {
+        width: 25%;
+    }
+}

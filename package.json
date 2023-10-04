@@ -1,0 +1,14 @@
+{
+  "name": "checkout-cart",
+  "version": "1.0.0",
+  "description": "Shopping Cart using HTML, CSS, JavaScript",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "George-Marius Baranga",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap-icons": "^1.11.1"
+  }
+}
