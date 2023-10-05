@@ -1,66 +1,8 @@
 'strict mode'
+
 const shop = document.getElementById('shop');
 
 // console.log(shop);
-
-const shopData = [
-{
-    id:'1st',
-    name: 'Nike T-Shirt V1',
-    price: 69,
-    description: 'Ullamco ea incididunt id fugiat',
-    img: 'images/f1.jpg'
-}, 
-{
-    id:'2nd',
-    name: 'Nike T-Shirt V2',
-    price: 35,
-    description: 'Ullamco ea incididunt id fugiat',
-    img: 'images/f2.jpg'
-}, 
-{
-    id:'3rd',
-    name: 'Nike T-Shirt V3',
-    price: 34,
-    description: 'Ullamco ea incididunt id fugiat',
-    img: 'images/f3.jpg'
-}, 
-{
-    id:'4th',
-    name: 'Nike T-Shirt V4',
-    price: 10,
-    description: 'Ullamco ea incididunt id fugiat',
-    img: 'images/f4.jpg'
-}, 
-{
-    id:'5th',
-    name: 'Nike T-Shirt V5',
-    price: 45,
-    description: 'Ullamco ea incididunt id fugiat',
-    img: 'images/f5.jpg'
-}, 
-{
-    id:'6th',
-    name: 'Nike T-Shirt V6',
-    price: 28,
-    description: 'Ullamco ea incididunt id fugiat',
-    img: 'images/f6.jpg'
-},
-{
-    id:'7th',
-    name: 'Nike Joggers V7',
-    price: 89,
-    description: 'Ullamco ea incididunt id fugiat',
-    img: 'images/f7.jpg'
-},
-{
-    id:'8th',
-    name: 'Nike Blouse V8',
-    price: 51,
-    description: 'Ullamco ea incididunt id fugiat',
-    img: 'images/f8.jpg'
-},
-];
 
 let generateShop = () => {
     return (shop.innerHTML = shopData.map((data) => {
@@ -76,10 +18,10 @@ let generateShop = () => {
                 <p>${description}</p>
                 <div class="price-quantity">
                     <h2>$${price}</h2>
-                    <div class="buttons">
-                        <i onclick="decrement('${id}')" class="bi bi-dash-lg"></i>
-                        <div id=${id} class="quantity">${search.item === undefined ? 0 : search.item}</div>
-                        <i onclick="increment('${id}')" class="bi bi-plus-lg"></i>
+                        <div class="buttons">
+                            <i onclick="decrement('${id}')" class="bi bi-dash-lg"></i>
+                            <div id=${id} class="quantity">${search.item === undefined ? 0 : search.item}</div>
+                            <i onclick="increment('${id}')" class="bi bi-plus-lg"></i>
                         </div>
                     </div>
                 </div>
